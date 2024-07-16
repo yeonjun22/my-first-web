@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<htm1>
+
+<head>
+    <title>나를 소개합니다</title>
+    <meta charset="utf-8">
+    <style>
+        a {
+            color:blanchedalmond;text-decoration: overline;        }
+        .highschool{
+            color:blueviolet;
+            text-decoration:wavy;
+        }
+        .elementaryschool{
+            color:aqua;
+            text-decoration:wavy;
+        }
+        .middleschool{
+            color:aquamarine;
+            text-decoration:wavy;
+        }
+        #oms {
+            color:brown;
+            text-decoration:wavy;
+        }
+        h1{
+            text-align:center;
+            border-width: 5px;
+            border-color: beige;
+            border-style: solid;
+
+            padding:20px;
+            margin:20px;
+        }
+        h2{
+            text-align:center;
+            border-width: 3px;
+            border-color: aliceblue;
+            border-style: solid;
+
+        }
+        div{
+            border:5px solid gray;display:grid;grid-template-columns: 100px 1fr;
+        }
+        #gri{
+            border:5px solid pink
+        }
+
+        @media(max-width:700px){
+            #gri{
+                display:none
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>하연준</h1>
+    <h2>저를 소개합니다.</h2>
+    <ul>
+        <li>나이:18</li>
+        <li>성별:남자</li>
+        <li>국적:한국</li>
+
+    </ul>
+
+<div id="gri">
+
+    <div>sadwsawdsa</div>
+    <div>dsadwsdsawd</div>
+
+</div>
+
+
+    <ol>
+        <li><a href="http://choeun.icees.kr/" class="elementaryschool" >초은초등학교</a>졸업</li>
+        <li><a class="middleschhol" id="oms">초은중학교 </a>졸업</li>
+        <li><a href="http://cheongra.icehs.kr/" class="highschool" >인천청라고등학교</a>재학</li>
+        <li>대학은 고민중</li>
+    </ol>
+
+    <input type="button" value="day" onclick="
+    
+    if (document.querySelector('body').dataset.mode==='night'){
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('body').dataset.mode='day'
+        this.value='day';
+    }
+    else{
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('body').dataset.mode='night'
+        
+    }
+    
+    "
+</body>
+<htm1>
